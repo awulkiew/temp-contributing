@@ -41,9 +41,7 @@ If everything works for you, you may move forward.
 1. login on GitHub
 2. go to [Boost.Geometry repository](https://github.com/boostorg/geometry)
 3. click the 'Fork' button
-
 ![Fork button](fork.png)
-
 4. choose your profile
 5. wait
 6. be happy!
