@@ -46,7 +46,7 @@ If everything works for you, you may move forward.
 
 4. choose your profile
 5. wait
-6. enjoy
+6. be happy!
 
 #### Verify if your fork works
 
