@@ -134,7 +134,7 @@ Now pick a name for your new branch. Try to choose the name which doesn't alread
 
 or check them directly on GitHub.
 
-Lets say that you'd like to add some new feature. To reflect that, and because Boost is using the GitFlow branching model, you could name your branch `feature/example`. Choosing the name for a branch is up to you since it won't be created in the original Boost.Geometry repository.
+Lets say that you'd like to add some new feature. To reflect that, and because Boost is using the [GitFlow](nvie.com/posts/a-successful-git-branching-model/) branching model, you could name your branch `feature/example`. Choosing the name for a branch is up to you since it won't be created in the original Boost.Geometry repository.
 
 Create new local branch
 
