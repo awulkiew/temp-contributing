@@ -21,14 +21,14 @@ Those are the steps which must be done to check out the Boost.Geometry repositor
 
 Check out the develop branch:
 
- cd libs/geometry
- git checkout develop
- git branch -vv
- git pull
+    cd libs/geometry
+    git checkout develop
+    git branch -vv
+    git pull
 
 Run the tests:
 
- b2 test
+    b2 test
 
 If everything works for you, you may move forward.
 
@@ -46,19 +46,19 @@ If everything works for you, you may move forward.
 
 Go out of modular-boost/libs/geometry directory
 
- cd ../../..
+    cd ../../..
 
 clone (make a local copy) and change branch
 
- git clone git@github.com:username/geometry geometry
- git checkout develop
- git branch -vv
- git pull
+    git clone git@github.com:username/geometry geometry
+    git checkout develop
+    git branch -vv
+    git pull
 
 see commits
 
- git log
- gitk
+    git log
+    gitk
 
 For now you should see exactly the same commits as in Boost.Geometry repository.
 
@@ -66,13 +66,13 @@ For now you should see exactly the same commits as in Boost.Geometry repository.
 
 Go back to the Geometry module directory: modular-boost/libs/geometry
 
- cd ../modular-boost/libs/geometry
+    cd ../modular-boost/libs/geometry
 
 #### Add new remote repository
 
 For now there is only one remote repository set for this local copy. You may check it running
 
- git remote -v
+    git remote -v
 
 You should see something like this:
 
@@ -82,11 +82,11 @@ There is one remote repository added, the original Boost.Geometry repository at 
 
 Add another remote repository, your fork. Give it some memorable name.
 
- git remote add my_fork git@github.com:username/geometry
+    git remote add my_fork git@github.com:username/geometry
 
 Now, after running
 
- git remote -v
+    git remote -v
 
 you should also see the remote you just added
 
@@ -96,7 +96,7 @@ you should also see the remote you just added
 
 Make sure you're in develop branch running
 
- git branch -vv
+    git branch -vv
 
 You should see
 
@@ -104,29 +104,28 @@ You should see
 
 Now pick a name for your new branch. Try to choose the name which doesn't already exist. To check the names of existing remote branches run
 
- git branch -a
+    git branch -a
 
 ![List of branches](branch_a.png)
 
 or check them directly on GitHub.
 
-Lets say that we're adding some new feature. To reflect that, and because we're using the GitFlow branching model, we'll name our branch `feature/example`.
-But choosing the name for a branch is really up to you since it won't be created in the original Boost.Geometry repository.
+Lets say that you'd like to add some new feature. To reflect that, and because Boost is using the GitFlow branching model, you could name your branch `feature/example`. But choosing the name for a branch is really up to you since it won't be created in the original Boost.Geometry repository.
 
 Create new local branch:
 
- git branch feature/example
- git checkout feature/example
+    git branch feature/example
+    git checkout feature/example
 
 Push it to your fork. This should create a remote branch for you
 
- git push -u my_fork feature/example
+    git push -u my_fork feature/example
 
 The `-u` switch also sets up the tracking of the remote branch.
 
 Now after running
 
-git branch -vv
+    git branch -vv
 
 you should see
 
@@ -136,11 +135,9 @@ You should also be able to see it on GitHub
 
 ![Fork branches list](remote_branch.png)
 
-After running
+or while running
 
- gitk
-
-you should also see your branches
+    gitk
 
  ![gitk develop and feature/example](gitk_branches.png)
 
@@ -150,32 +147,31 @@ At this point it's up to you what to do with your new branch.
 
 A word about commits though. Run
 
- git log
+    git log
 
 or
 
- gitk
+    gitk
 
-see what's the commit messages convention.
+see what the commit messages convention is used.
 
-In Boost.Geometry the commit message consist of:
-1. some name of the modified part of the library in the square brackets, e.g. an algorithm name (tip: look at the namespaces and directories)
-2. a short title
-3. an extended comment in the new lines
+In Boost.Geometry the commit messages should contain:
 
-To add more lines to the commit message use git commit without the -m switch.
+1. some name of the modified part of the library in the square brackets, e.g. an algorithm name (tip: look at the namespaces and directories),
+2. a short title,
+3. an extended comment in the new lines (tip: to add more lines to the commit message use git commit without the `-m` switch).
 
-And as it's mentioned in (http://git-scm.com/book/en/Distributed-Git-Contributing-to-a-Project):
+As it's mentioned in the GIT documentation (http://git-scm.com/book/en/Distributed-Git-Contributing-to-a-Project):
 
-> It’s also a good idea to use the imperative present tense in these messages. In other words, use commands. Instead of "I added tests for" or "Adding tests for," use "Add tests for."
+> It's also a good idea to use the imperative present tense in these messages. In other words, use commands. Instead of "I added tests for" or "Adding tests for," use "Add tests for."
 
 At the end, push your changes to the remote branch
 
- git push my_fork feature/example
+    git push my_fork feature/example
 
 or if your local branch is tracking the remote one, just
 
- git push
+    git push
 
 ### Request a pull
 
@@ -185,7 +181,7 @@ Click compare and pull request button
 
 ![compare and pull button](compare_and_pull.png)
 
-By default GitHub wants to request a pull to the boostorg/geometry/master branch
+By default GitHub wants to request a pull to the boostorg/geometry:master branch
 
 ![default pull branches](default_pull.png)
 
@@ -193,7 +189,7 @@ Change it by clicking the "Edit" button on the right side and pick develop branc
 
 ![change base branch](change_pull_base.png)
 
-Add some nice title and description
+add some nice title and description
 
 ![Pull request title](pull_request_title.png)
 
