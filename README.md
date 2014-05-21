@@ -20,7 +20,7 @@ Distributed under the Boost Software License, Version 1.0. (See accompanying fil
     * [Commits](#commits)
     * [Test](#test)
     * [Push](#push)
-* [Request a pull](#request-a-pull)
+* [Pull request](#pull-request)
 * [Review](#review)
 
 ### Prerequesites
@@ -232,7 +232,7 @@ or if your local branch is tracking the remote one, just
 
     git push
 
-### Request a pull
+### Pull request
 
 After pushing your work you should be able to see it on GitHub.
 
