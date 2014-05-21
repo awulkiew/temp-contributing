@@ -34,13 +34,15 @@ If everything works for you, you may move forward.
 
 ### Create a fork of Boost.Geometry
 
-1. Fork
+1. login on GitHub
+2. go to [Boost.Geometry repository](https://github.com/boostorg/geometry)
+3. click the 'Fork' button
 
 ![Fork button](fork.png)
 
-2. Choose your profile
-3. Wait
-4. Done
+4. choose your profile
+5. wait
+6. enjoy
 
 ### Check if the fork works
 
