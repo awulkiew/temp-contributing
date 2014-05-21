@@ -73,7 +73,7 @@ You could of course stop on the previous point and work on this local clone of t
 
 #### Preparation
 
-If you did the optional steps mentioned in the section **Verify if your fork works (optional)**, go back to the Geometry module directory `modular-boost/libs/geometry/`.
+If you did the optional steps mentioned in the section [**Verify if your fork works (optional)**](./#verify-if-your-fork-works), go back to the Geometry module directory `modular-boost/libs/geometry/`.
 
     cd ../modular-boost/libs/geometry
 
