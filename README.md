@@ -64,13 +64,15 @@ see commits
 
 For now you should see exactly the same commits as in Boost.Geometry repository.
 
-### Setup modular-boost to work with your fork
+### Working with ModularBoost
+
+You could of course stop on the previous point and work on this local clone of the fork of Boost.Geometry however there is a catch. You won't be able to use b2 (run tests or build documentation) if the library is not inside the Boost directory. It's therefore convenient to use your fork inside modular-boost which basically means adding new remote for Boost.Geometry and using it aside the original Boost.Geometry repository.
+
+#### Preparation
 
 Go back to the Geometry module directory (modular-boost/libs/geometry)
 
     cd ../modular-boost/libs/geometry
-
-#### Add new remote repository
 
 For now there is only one remote repository set for this local copy. You may check it by running
 
@@ -81,6 +83,8 @@ you should see something like this
 ![origin git@github.com:boostorg/geometry.git](remote_origin.png)
 
 There is one remote repository added, the original Boost.Geometry repository at boostorg/geometry.git
+
+#### Add new remote repository
 
 Add another remote repository, your fork, give it some memorable name
 
@@ -135,8 +139,7 @@ you should see
 
 ![Feature branch picked](branch_vv_feature.png)
 
-Have in mind that if you didn't use the `-u` switch you wouldn't see the tracking info for your new branch.
-Don't panic. You should also be able to see it on GitHub
+Have in mind that if you didn't use the `-u` switch you wouldn't see the tracking info for your new branch. You should also be able to see it on GitHub
 
 ![Fork branches list](remote_branch.png)
 
