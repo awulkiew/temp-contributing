@@ -53,7 +53,7 @@ Go out of modular-boost/libs/geometry directory
 
     cd ../../..
 
-clone (make a local copy) and change branch
+clone your repository and checkout develop branch
 
     git clone git@github.com:username/geometry geometry
     git checkout develop
