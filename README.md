@@ -143,7 +143,9 @@ you should see
 
 ![Feature branch picked](branch_vv_feature.png)
 
-Have in mind that if you didn't use the `-u` switch you wouldn't see the tracking info for your new branch. You should also be able to see it on GitHub
+Have in mind that if you didn't use the `-u` switch you wouldn't see the tracking info for your new branch.
+
+You should also be able to see your newly created remote branch on GitHub
 
 ![Fork branches list](remote_branch.png)
 
