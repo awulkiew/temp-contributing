@@ -85,7 +85,7 @@ you should see something like this
 
 ![origin git@github.com:boostorg/geometry.git](remote_origin.png)
 
-There is one remote repository added, the original Boost.Geometry repository at boostorg/geometry.git
+There is one remote repository added, the original Boost.Geometry repository at [boostorg/geometry](https://github.com/boostorg/geometry)
 
 #### Add new remote repository
 
