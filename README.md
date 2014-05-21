@@ -4,6 +4,25 @@ Copyright © 2014 Adam Wulkiewicz
 
 Distributed under the Boost Software License, Version 1.0. (See accompanying file LICENSE_1_0.txt or copy at >[http://www.boost.org/LICENSE_1_0.txt](http://www.boost.org/LICENSE_1_0.txt))
 
+### Table of Contents
+
+* [Prerequesites](#prerequesites)
+* [Testing the development branch of Boost.Geometry](#testing-the-development-branch-of-boostgeometry)
+* [Fork Boost.Geometry repository](#fork-boostgeometry-repository)
+    * [Verify if your fork works (optional)](#verify-if-your-fork-works-optional)
+* [Working with ModularBoost](#working-with-modularboost)
+    * [Preparation](#preparation)
+    * [Add new remote repository](#add-new-remote-repository)
+    * [GitFlow workflow](#gitflow-workflow)
+    * [Create new branch for your work](#create-new-branch-for-your-work)
+    * [Verify](#verify)
+* [Modify the branch](#modify-the-branch)
+    * [Commits](#commits)
+    * [Test](#test)
+    * [Push](#push)
+* [Request a pull](#request-a-pull)
+* [Done!](#done)
+
 ### Prerequesites
 
 * git (Git BASH on Windows)
