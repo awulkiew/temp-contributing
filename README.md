@@ -32,7 +32,7 @@ Run the tests
 
 If everything works for you, you may move forward.
 
-### Create a fork of Boost.Geometry
+### Fork Boost.Geometry repository
 
 1. login on GitHub
 2. go to [Boost.Geometry repository](https://github.com/boostorg/geometry)
@@ -44,7 +44,7 @@ If everything works for you, you may move forward.
 5. wait
 6. enjoy
 
-### Check if the fork works
+#### Verify if your fork works
 
 Go out of modular-boost/libs/geometry directory
 
@@ -125,6 +125,8 @@ push it to your fork
 
 This should create a remote branch for you. The `-u` switch also sets up the tracking of the remote branch.
 
+#### Verify
+
 Now after running
 
     git branch -vv
@@ -133,7 +135,8 @@ you should see
 
 ![Feature branch picked](branch_vv_feature.png)
 
-You should also be able to see it on GitHub
+Have in mind that if you didn't use the `-u` switch you wouldn't see the tracking info for your new branch.
+Don't panic. You should also be able to see it on GitHub
 
 ![Fork branches list](remote_branch.png)
 
