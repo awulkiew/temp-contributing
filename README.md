@@ -160,7 +160,7 @@ If you plan to add a new feature, or a bugfix, or some parts for the docs, or an
 
 #### Commits
 
-A word about commits though. Run
+A word about commits, run
 
     git log
 
