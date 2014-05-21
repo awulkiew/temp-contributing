@@ -49,7 +49,7 @@ If everything works for you, you may move forward.
 
 #### Verify if your fork works
 
-Go out of modular-boost/libs/geometry directory
+Go out of `modular-boost/libs/geometry/` directory
 
     cd ../../..
 
@@ -73,7 +73,7 @@ You could of course stop on the previous point and work on this local clone of t
 
 #### Preparation
 
-Go back to the Geometry module directory (modular-boost/libs/geometry)
+Go back to the Geometry module directory `modular-boost/libs/geometry/`
 
     cd ../modular-boost/libs/geometry
 
@@ -179,6 +179,14 @@ In Boost.Geometry the commit messages should contain:
 As it's mentioned in the GIT documentation (http://git-scm.com/book/en/Distributed-Git-Contributing-to-a-Project):
 
 > It's also a good idea to use the imperative present tense in these messages. In other words, use commands. Instead of "I added tests for" or "Adding tests for," use "Add tests for."
+
+#### Test
+
+As you already know tests are placed in the `test/` directory. Add tests for the newly added feature and if you added new files modify the Jamfile as well.
+
+Run the tests (assuming you're in `modular-boost/libs/geometry/`)
+
+    b2 test
 
 #### Push
 
