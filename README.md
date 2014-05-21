@@ -17,16 +17,16 @@ Other helpful links:
 ### Testing the development branch of Boost.Geometry
 
 Those are the steps which must be done to check out the Boost.Geometry repository and run tests
-(also described here: https://svn.boost.org/trac/boost/wiki/TryModBoost#Developing):
+(also described here: https://svn.boost.org/trac/boost/wiki/TryModBoost#Developing).
 
-Check out the develop branch:
+Check out the develop branch
 
     cd libs/geometry
     git checkout develop
     git branch -vv
     git pull
 
-Run the tests:
+Run the tests
 
     b2 test
 
@@ -64,27 +64,27 @@ For now you should see exactly the same commits as in Boost.Geometry repository.
 
 ### Setup modular-boost to work with your fork
 
-Go back to the Geometry module directory: modular-boost/libs/geometry
+Go back to the Geometry module directory (modular-boost/libs/geometry)
 
     cd ../modular-boost/libs/geometry
 
 #### Add new remote repository
 
-For now there is only one remote repository set for this local copy. You may check it running
+For now there is only one remote repository set for this local copy. You may check it by running
 
     git remote -v
 
-You should see something like this:
+you should see something like this
 
 ![origin git@github.com:boostorg/geometry.git](remote_origin.png)
 
 There is one remote repository added, the original Boost.Geometry repository at boostorg/geometry.git
 
-Add another remote repository, your fork. Give it some memorable name.
+Add another remote repository, your fork, give it some memorable name
 
     git remote add my_fork git@github.com:username/geometry
 
-Now, after running
+now after running
 
     git remote -v
 
@@ -98,7 +98,7 @@ Make sure you're in develop branch running
 
     git branch -vv
 
-You should see
+you should see
 
 ![Develop branch picked](branch_vv_develop.png)
 
@@ -110,18 +110,18 @@ Now pick a name for your new branch. Try to choose the name which doesn't alread
 
 or check them directly on GitHub.
 
-Lets say that you'd like to add some new feature. To reflect that, and because Boost is using the GitFlow branching model, you could name your branch `feature/example`. But choosing the name for a branch is really up to you since it won't be created in the original Boost.Geometry repository.
+Lets say that you'd like to add some new feature. To reflect that, and because Boost is using the GitFlow branching model, you could name your branch `feature/example`. Choosing the name for a branch is up to you since it won't be created in the original Boost.Geometry repository.
 
-Create new local branch:
+Create new local branch
 
     git branch feature/example
     git checkout feature/example
 
-Push it to your fork. This should create a remote branch for you
+push it to your fork
 
     git push -u my_fork feature/example
 
-The `-u` switch also sets up the tracking of the remote branch.
+This should create a remote branch for you. The `-u` switch also sets up the tracking of the remote branch.
 
 Now after running
 
@@ -139,11 +139,13 @@ or while running
 
     gitk
 
- ![gitk develop and feature/example](gitk_branches.png)
+![gitk develop and feature/example](gitk_branches.png)
 
 ### Modify the branch
 
 At this point it's up to you what to do with your new branch.
+
+#### Commits
 
 A word about commits though. Run
 
@@ -153,7 +155,7 @@ or
 
     gitk
 
-see what the commit messages convention is used.
+and see what the commit messages convention is used.
 
 In Boost.Geometry the commit messages should contain:
 
@@ -164,6 +166,8 @@ In Boost.Geometry the commit messages should contain:
 As it's mentioned in the GIT documentation (http://git-scm.com/book/en/Distributed-Git-Contributing-to-a-Project):
 
 > It's also a good idea to use the imperative present tense in these messages. In other words, use commands. Instead of "I added tests for" or "Adding tests for," use "Add tests for."
+
+#### Push
 
 At the end, push your changes to the remote branch
 
