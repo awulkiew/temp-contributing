@@ -151,7 +151,7 @@ or while running
 
 ### Modify the branch
 
-At this point it's up to you what to do with your new branch.
+If you plan to add a new feature, or a bugfix, or some parts for the docs, or an example, it is often wise to consult the [mailing list](http://lists.boost.org/mailman/listinfo.cgi/geometry) if that is a good idea. Other people may be working on the same thing. If it is a larger feature it is good to post a sort of implementation plan to check if the feature, and the implementation, is what is expected.
 
 #### Commits
 
@@ -189,7 +189,7 @@ or if your local branch is tracking the remote one, just
 
 After pushing your work you should be able to see it on GitHub.
 
-Click compare and pull request button
+Click "Compare and pull request" button
 
 ![compare and pull button](compare_and_pull.png)
 
