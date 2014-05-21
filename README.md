@@ -21,7 +21,7 @@ Distributed under the Boost Software License, Version 1.0. (See accompanying fil
     * [Test](#test)
     * [Push](#push)
 * [Request a pull](#request-a-pull)
-* [Done!](#done)
+* [Review](#review)
 
 ### Prerequesites
 
@@ -254,6 +254,8 @@ add some nice title and description
 
 and click the "Send pull request" button.
 
-### Done!
+### Review
 
-After the review your contribution will be merged into Boost.Geometry or you'll see some comments about issues that should be fixed before merging.
+After sending a pull request your code will be reviewed. If there are no objections your changes will be merged. Otherwise you'll see some comments under the pull request and/or under specific lines of your code. At this point it will be possible to make required changes, commit them and push to your branch. Those changes will automatically be a part of the same pull request. This procedure will be repeated until the code is ready for merging.
+
+If you're curious how it looks like you may see one of the open or closed [pull requests](https://github.com/boostorg/geometry/pulls?direction=desc&page=1&sort=created&state=open).
