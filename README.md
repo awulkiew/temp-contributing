@@ -38,6 +38,8 @@ If everything works for you, you may move forward.
 
 ### Fork Boost.Geometry repository
 
+You can't work directly in the original Boost.Geometry repository, therefore you should create your fork of this library. This way you can modify the code and when the job is done send a pull request to merge your changes with the original repository.
+
 ![Fork button](fork.png)
 
 1. login on GitHub
@@ -46,6 +48,8 @@ If everything works for you, you may move forward.
 4. choose your profile
 5. wait
 6. be happy!
+
+More info: [Forking Projects](https://guides.github.com/activities/forking/)
 
 #### Verify if your fork works (optional)
 
@@ -100,6 +104,17 @@ now after running
 you should also see the remote you just added
 
 ![my_fork git@github.com:awulkiew/geometry](remote_fork_origin.png)
+
+#### GitFlow workflow
+
+Boost is using the [GitFlow](http://nvie.com/posts/a-successful-git-branching-model/) workflow or branching model if you like. It's because it is very well suited to collaboration and scaling the development team. Each repository using this model should contain two main branches:
+
+* master - release-ready version of the library
+* develop - development version of the library
+ 
+and could contain various supporting branches for new features and hotfixes. Those supporting branches have specific purposes, there are also rules describing which branches they may originate from and which branches they may be merged with. Those issues aren't covered in this tutorial.
+
+As a contributor you'll most likely be adding new features or fixing bugs in the development version of the library. This means that for each contribution you should create a new branch originating from the develop branch, modify it and send a pull request in order to merge it, again with the develop branch.
 
 #### Create new branch for your work
 
