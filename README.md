@@ -1,3 +1,9 @@
+****
+
+This is a preliminary/temporary version of the Boost.Geometry Contribution Tutorial. This version of the Tutorial was left here for historical purposes and won't be updated. The up-to-date version can be found in the [Boost.Geometry Wiki](http://github.com/boostorg/geometry/wiki/Contribution-Tutorial).
+
+****
+
 ## Contributing to Boost.Geometry
 
 Copyright © 2014 Adam Wulkiewicz
